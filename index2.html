@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: #444;
+            animation:sky 10s linear ;
+        }
+        .sun{
+            position: fixed;
+            bottom: 15%;
+            left: 10%;
+            width: 15vw;
+            height: 15vw;
+            background-color: darkorchid;
+            border-radius: 50%;
+            animation: sun 10s linear;
+        }
+        .grass {
+            position: fixed;
+            right: 0;
+            left: 0;
+            bottom: 0;
+            height: 30vh;
+            background-color: #222;
+            animation: grass 10s linear;
+
+        }
+        @keyframes sky {
+            0%{
+                background-color: #444;
+            }
+            20%{
+                background-color: pink;
+            }
+            50%{
+                background-color: lightblue;
+            }
+            80%{
+                background-color: pink;
+            }
+            100%{
+                background-color: #444;
+            }
+        }
+        @keyframes grass {
+            0%{
+                background-color: #222;
+            }
+            20% {
+                background-color: greenyellow;
+
+            }
+            50% {
+                background-color: green;
+            }
+            80% {
+                background-color: orange;
+            }
+            100%{
+                background-color: #222;
+            }
+
+        }
+        @keyframes sun {
+            0%{
+                bottom: 15%;
+                left: 10%;
+                background-color: darkorchid;
+            }
+            50%{
+                bottom: 45%;
+                background-color: yellow;
+            }
+            100%{
+                bottom: 15%;
+                left: 90%;
+            }
+
+            
+        }
+
+    </style>
+</head>
+<body>
+    <div class="sun"></div>
+    <div class="grass"></div>
+</body>
+</html>
